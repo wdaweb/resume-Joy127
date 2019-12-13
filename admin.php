@@ -43,6 +43,29 @@
         background-color: #fff;
       }
 
+      a {
+        display:block;
+        width:180px;
+        height:40px;           
+        padding:5px;            
+        font-size:25px;
+        color:white;
+        margin:5px auto;       
+        font-weight:bold;
+        text-align: center;  
+        position: relative;
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-decoration: none;     
+        background-color: rgba(170, 237, 253, 0.925);            
+      }
+
+      a:hover {
+        color:green;
+        cursor:pointer;
+        background-color:#fafbc9;
+      } 
+
 
     </style>
 </head>
@@ -69,7 +92,8 @@
               <a href="?do=bio">自傳附件</a>
               <a href="?do=photo">相片管理</a>
               <a href="./front/resume.php">履歷顯示</a>
-            </div>
+              <a href="./api/logout.php">登出系統</a>
+            </div>            
         </div> 
 
         <div class="right">

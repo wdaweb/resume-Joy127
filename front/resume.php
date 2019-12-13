@@ -150,8 +150,8 @@
         background: #fff;
     }
 
-    div.tab_container .tab_content {
-        padding: 10px;
+    div.tab_container .tab_content {        
+        padding: 10px;       
     }
 
     div.tab_container .tab_content h2 {
@@ -159,8 +159,8 @@
     }
 
     div.tab_container .tab_content h3 {
-        padding: 0px;
-        margin: 0px;       
+        padding: 15px;
+        margin: 0px;     
     }  
     </style>
 <body>
@@ -201,12 +201,12 @@
                     </div>
 
                     <div id="tab5" class="tab_content"> 
-                        <h3>技能專長</h3>                      
+                        <h3>技能專長</h3> 
                         <?php include "./skill.php"; ?>                       
                     </div>
 
-                    <div id="tab6" class="tab_content">
-                        <!-- <h3>自傳</h3> -->
+                    <div id="tab6" class="tab_content"> 
+                        <h3>關於我</h3>                        
                         <?php include "./bio.php"; ?>                      
                     </div>
                     

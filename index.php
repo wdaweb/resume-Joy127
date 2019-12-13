@@ -57,7 +57,7 @@
       }
 
       .connect{    
-        float:right
+        /* float:right
         padding: 4px;       
         color:#000;
         font-size: 20px;
@@ -67,9 +67,18 @@
         border: 1px solid #ddd;
         text-align:center;
         text-decoration:none;
-        background: rgba(241, 247, 248, 0.925);
+        background: rgba(241, 247, 248, 0.925); */
       }
 
+      a{        
+        color: #000;       
+        padding: 6px;
+        margin: 5px;
+        font-size: 15px;
+        cursor: pointer;      
+        text-decoration: none;
+        background: rgba(241, 247, 248, 0.925);
+    }
     </style>
 </head>
 <body>   
@@ -91,14 +100,11 @@
                       </tr>
                       <tr>                        
                           <td colspan="2">
+                            <a href="reg.php" >加入會員</a>
                             <input type="submit" value="登入">
                             <input type="reset" value="重置">
-                            <!-- <a href="reg.php" class="connect">加入會員</a> -->
                           </td>                    
-                      </tr>    
-                      <tr>                        
-                          <td colspan="2"><a href="reg.php" class="connect">加入會員</a></td>                    
-                      </tr>                                    
+                      </tr>
                   </table>             
               </form>
             </div>        

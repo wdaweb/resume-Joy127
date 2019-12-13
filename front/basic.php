@@ -11,9 +11,9 @@
     ?> 
     <table>            
         <tr>
-            <td>姓&nbsp;&nbsp;名</td>
+            <td>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</td>
             <td><?=$data['name'];?></td>
-            <td rowspan="5"><img src="../img/<?=$data1['file'];?>" style='width:100px; height:150px; float:right'></td> 
+            <td rowspan="5"><img src="../img/<?=$data1['file'];?>" style="width:100px; height:150px;"></td> 
         </tr>
         <tr>
             <td>出生日期</td>

@@ -13,25 +13,24 @@
 
         $rows=$pdo->query($sql)->fetchAll();
         foreach ($rows as $key => $r) {
-        ?> 
-            <tr></tr>                             
+        ?>                                         
             <tr>
-                <td style="width:100px text-align:right">語文能力</td>
-                <td style="width:200px text-align:left"><?=$r['lang'];?></td>
+                <td style="color:orange">語文能力</td>
+                <td style=""><?=$r['lang'];?></td>
             </tr>
             <tr>
-                <td style="width:100px text-align:right">電腦專長</td>
-                <td style="width:200px text-align:left"><?=$r['comp'];?></td>
+                <td style="">電腦專長</td>
+                <td style=""><?=$r['comp'];?></td>
             </tr>
             <tr>
-                <td style="width:100px text-align:right">其他技能</td>
-                <td style="width:200px text-align:left"><?=$r['other'];?></td>
+                <td style="">其他技能</td>
+                <td style=""><?=$r['other'];?></td>
             </tr>
             <tr>
-                <td style="width:100px text-align:right">專業證照</td>
-                <td style="width:200px text-align:left"><?=$r['cert'];?></td>
+                <td style="">專業證照</td>
+                <td style=""><?=$r['cert'];?></td>
             </tr>
-            <tr></tr>             
+            <tr><td></td></tr>             
         <?php
         }
         ?>       

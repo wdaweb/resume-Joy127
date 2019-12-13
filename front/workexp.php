@@ -19,21 +19,24 @@
 
         $rows=$pdo->query($sql1)->fetchAll();
         foreach ($rows as $key => $r) {
-      ?> 
-        <tr></tr>         
-        <tr>                      
+      ?>        
+        <tr> 
+            <td style="color:orange">公司名稱</td>                     
             <td><?=$r['coname'];?></td>
         </tr>
-        <tr>           
+        <tr>
+            <td>職位名稱</td>           
             <td><?=$r['position'];?></td>
         </tr>
-        <tr>            
+        <tr> 
+            <td>工作期間</td>           
             <td><?=$r['period'];?></td>
         </tr>        
-        <tr>                      
-            <td><textarea name="content" cols="100" rows="3"><?=$r['content'];?></textarea></td> 
+        <tr> 
+            <td>工作內容</td>                      
+            <td><textarea name="content" cols="85" rows="4"><?=$r['content'];?></textarea></td> 
         </tr> 
-        <tr></tr>                           
+        <tr><td></td></tr>                           
       <?php
         }
       ?> 
@@ -42,18 +45,17 @@
      <!-- 插入一個DIV用來放置分頁及頁碼-->
     <div>   
       <?php
-          // if(($p-1)>0){   
-                 
-          //   echo "<a href='resume.php?p=".($p-1)."' style='text-decoration:none'> < </a>";
-          // }
-          for($i=1;$i<=$pages;$i++){
-            $fontSize=($i==$p)?"24px":"16px";
-            echo "<a href='resume.php?&p=$i#tab3' style='font-size:$fontSize;text-decoration:none'> ".$i." </a>";
-            // echo "<a href='resume.php?p=$i#tab3' style='font-size:$fontSize;text-decoration:none'> ".$i." </a>";
-          }
-          // if(($p+1)<=$pages){
-          //   echo "<a href='resume.php?p=".($p+1)."' style='text-decoration:none'> > </a>";
-          // }
+        if(($p-1)>0){ 
+          echo "<a href='resume.php?do=workexp&p=".($p-1)."' style='text-decoration:none'> < </a>";
+        }
+        for($i=1;$i<=$pages;$i++){
+          $fontSize=($i==$p)?"24px":"16px";            
+          echo "<a href='resume.php?do=workexp&p=$i' style='font-size:$fontSize;text-decoration:none'> ".$i." </a>";
+        }
+        if(($p+1)<=$pages){
+          echo "<a href='resume.php?do=workexp&p=".($p+1)."' style='text-decoration:none'> > </a>";
+        }
       ?>
     </div> 
 </div>
+     

@@ -4,13 +4,11 @@
     foreach ($_POST['eid'] as $key => $eid) {
         if (!empty($_POST['del']) && in_array($eid,$_POST['del'])) {                        
             //del           
-            $sql="DELETE FROM `edu` WHERE `eid`='$eid'";
-           
-            $pdo->exec($sql);
+            $sql="DELETE FROM `edu` WHERE `eid`='$eid'";           
+            $pdo->exec($sql);            
 
         }else { 
-            //update
-            
+            //update            
             $data['eid']=$_POST['eid'][$key];
             $data['id']=$_POST['id'][$key];
             $data['level']=$_POST['level'][$key];
@@ -31,6 +29,5 @@
         }
     }
 
-    header("location:../admin.php?do=edu"); 
-    
+    header("location:../admin.php?do=edu");     
 ?>
